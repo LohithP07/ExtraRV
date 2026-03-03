@@ -1,0 +1,7 @@
+{
+    "Name": "ExtraRV",
+    "Version": "1.2.0",
+    "Description": "Spawn extra RV vehicles via console command 'spawnrv' or keybind F7. Run 'scanrv' (F6) first if spawning fails.",
+    "Authors": ["Lohith"],
+    "LuaMod": true
+}
