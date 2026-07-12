@@ -191,7 +191,7 @@ local function do_spawn_rv(sideOffset, zHeight)
         -- ── STRATEGY 2: Direct SpawnActor — Blueprint defaults handle replication
         if not spawnedOk then
             local ok2, e2 = pcall(function()
-                local world = safe(function() return FindFirstOf("World") end)
+                local world = require("UEHelpers").GetWorld()
                 if isvalid(world) then
                     local a = world:SpawnActor(rvClass, spawnLoc, spawnRot)
                     if isvalid(a) then
